@@ -124,6 +124,101 @@ We will get the correct header from here - https://en.wikipedia.org/wiki/Portabl
 
 Now, Let's change it.
 
+![Screenshot (89)](https://user-images.githubusercontent.com/109613277/204963881-92b9a947-4932-41bb-a5d2-459bd6b737cb.png)
+  
+Now we will open the image file.
+ 
+![Screenshot (90)](https://user-images.githubusercontent.com/109613277/204964113-b586304a-cb3c-4d0d-852b-1802aab9b440.png)
+
+After opening the image file we can see the password is written. So, Must remember this is our password.
+  
+Now we will use the steghide that will help us to find hidden files in other image files.
+  
+steghide extract -sf aa.jpg
+
+![Screenshot (91)](https://user-images.githubusercontent.com/109613277/204966016-f5f988b2-2ed6-48ff-a19c-783562f50c54.png)
+
+Now, We will use the password 'password' which we got from the Leave_Me_Alone.Png image using that password we will extract the aa.jpg file.
+ 
+![Screenshot (92)](https://user-images.githubusercontent.com/109613277/204967644-dd564699-7c56-4650-9e92-a21b1da7a363.png)
+
+After extracting we got "ss.zip" file.
+
+Now, We unzipped it and after doing that we got two files - 'passwd.txt' and 'shado file'  
+  
+Now, We will use cat 'shado' file to retrieve the password.
+
+![image](https://user-images.githubusercontent.com/109613277/204968866-b643a392-d9d0-4bd2-bad4-4af9e3638c39.png)
+
+We got the password :  'M3tahuman' -- (ssh password) --- (what is the file name with SSH password?)
+  
+# 4. SSH Login
+  
+Sorry here my machine got expired. So, I did it again with new IP address
+  
+Now, We got the SSH password. So, Now we can login.
+
+Username - slade 
+password - M3tahuman  
+ 
+ssh slade@10.10.236.157  (You will provide your own IP address)
+  
+<img width="960" alt="Screenshot_20221201_104423" src="https://user-images.githubusercontent.com/109613277/204971501-55aedc73-71c7-4ac9-964d-47ae6f8222a5.png">
+  
+Now, We are logged in and  we will search for user.txt flag
+  
+slade@LianYu:~$ ls
+user.txt
+ 
+![image](https://user-images.githubusercontent.com/109613277/204972557-49f35a6f-a783-4ca5-9abb-2b6683f52530.png)
+ 
+Yes, We got user.txt 
+  
+user.txt - 'THM{P30P7E_K33P_53CRET5__C0MPUT3R5_D0N'T}'  
+  
+# 5. Root Privilege Escalation  
+
+Root Privilege commands
+  
+sudo -l
+  
+![image](https://user-images.githubusercontent.com/109613277/204976714-0b0bde96-f7eb-435a-bfbf-07670ebf3952.png)
+
+After running sudo -l it again asked us for slade password.
+ 
+We have used that same password again - 'M3tahuman'.
+  
+sudo pkexec /bin/sh
+  
+![image](https://user-images.githubusercontent.com/109613277/204979142-14f52885-aae4-40fc-ba93-9dafd9dc49fa.png)
+  
+Yes, We got root.txt  
+  
+root.txt - 'THM{MY_W0RD_I5_MY_B0ND_IF_I_ACC3PT_YOUR_CONTRACT_THEN_IT_WILL_BE_COMPL3TED_OR_I'LL_BE_D34D}'  
+  
+Finish.
+  
+Now, We submit the flag.  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
 
 
 
