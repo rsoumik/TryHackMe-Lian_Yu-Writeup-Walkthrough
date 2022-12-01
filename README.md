@@ -1,7 +1,5 @@
 # TryHackMe-Lian_Yu-Writeup-Walkthrough
 
-A Beginner Level Security Challenge.
-
 In this CTF flags are secretly hidden in purposefully-vulnerable programs or websites.
 
 Room link : https://tryhackme.com/room/lianyu
@@ -207,10 +205,6 @@ root.txt - 'THM{MY_W0RD_I5_MY_B0ND_IF_I_ACC3PT_YOUR_CONTRACT_THEN_IT_WILL_BE_COM
 Finish.
   
 Now, We submit the flag.  
-
-Hope these things helped you a lot.
-
-
   
   
   
