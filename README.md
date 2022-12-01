@@ -1,4 +1,4 @@
-# Lian_Yu - TryHackme-Writeup Walkthrough
+# TryHackMe-Lian_Yu-Writeup-Walkthrough
 
 Room link : https://tryhackme.com/room/lianyu
 
