@@ -1,5 +1,7 @@
 # TryHackMe-Lian_Yu-Writeup-Walkthrough
 
+In this CTF flags are secretly hidden in purposefully-vulnerable programs or websites.
+
 Room link : https://tryhackme.com/room/lianyu
 
 # 1. IP SCANNING
