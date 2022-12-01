@@ -189,6 +189,10 @@ sudo -l
 After running sudo -l it again asked us for slade password.
  
 We have used that same password again - 'M3tahuman'.
+
+Now, We can see that we can run 'pkexec' with root privileges. 
+
+So, Now we will run  '/bin/sh' program to get root access
   
 sudo pkexec /bin/sh
   
